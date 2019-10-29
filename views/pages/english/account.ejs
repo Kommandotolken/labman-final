@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <%include ./partials/head %>
+       
+    </head>
+    <body>
+    <header>
+        <% include ./partials/header %>
+    </header>
+    <p>Account</p>
+   <table>
+        <th>ID</th>
+        <th>name</th>
+        <th>email</th>
+        <th>usertype</th>
+        <th>avdelning</th>
+        <% for (const row of usr) { %> 
+        <tr>
+            <td><%= row.id%></td>
+            <td><%= row.fornamn%></td>
+
+            <td><%= row.email%></td>
+            
+            <td><%= row.usertype%></td>
+            <td><%= row.avdelning%></td>
+        </tr>
+<% }; %>
+</table>
+    <p>Bookings</p>
+    <table>
+      <th>Booking ID</th>
+
+      <th>Equipment ID</th>
+      <th>Status</th>
+      <th>Booked from</th>
+      <th>Return by</th>
+      <th>Returned</th>
+    <% for (const row of book) { %> 
+        <tr>
+            <td><%= row.bookingid%></td>
+          
+            <td><%= row.equipmentid%></td>
+            
+            <td><%= row.bookingstatus%></td>
+            <td><%= row.bookedfrom%></td>
+            <td><%= row.returnby%></td>
+            <td><%= row.actualreturn%></td>
+        </tr>
+  <% }; %>
+    </table>
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+    </body>
+</html>

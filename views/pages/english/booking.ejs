@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <%include ./partials/head %>
+    </head>
+    <body>
+    <header>
+        <% include ./partials/header %>
+    </header>
+    <p>booking</p>
+    <table>
+<th>namn</th>
+<th>id</th>
+<th>status</th>
+<th>book</th>
+    <% for (const row of res) { %>
+        <tr>
+            <td><%= row.namn %></td>
+            <td><%= row.id%></td>
+            <td><%= row.status %> </td>
+            <td><input type="radio" name="time" value="1">1 dag<br>
+                <input type="radio" name="time" value="7">7 dagar<br></td>
+                <td><a href="/booking/<%= row.id%>"><button>book</button></a></td>
+                
+       
+        </tr>
+    <% }; %>
+</table>
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+    </body>
+</html>

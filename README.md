@@ -17,13 +17,13 @@ The views folder is split into two subfolders. There is an "English" and "svensk
 
 LINKS:
 
-* <a href="labman-master/config">Config</a>
+* <a href="https://github.com/Kommandotolken/labman-final/tree/master/config">Config</a>
 
-* <a href="labman-master/sql">SQL</a>
+* <a href="https://github.com/Kommandotolken/labman-final/tree/master/sql">SQL</a>
 
-* <a href="labman-master/public">Public</a>
+* <a href="https://github.com/Kommandotolken/labman-final/tree/master/public">Public</a>
 
-* <a href="labman-master/views">Views</a>
+* <a href="https://github.com/Kommandotolken/labman-final/tree/master/views">Views</a>
 
 
 
